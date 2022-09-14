@@ -16,20 +16,16 @@
     display: flex;
     width: 100%;
     height: 20%;
-    background-color: aqua;
 }
 
 .head-nav .nav-logo a{
-    display: flex;
     width: 100%;
     background: url(assets/logo.png) no-repeat center center;
     background-size: cover;
 }
 
 .head-nav .nav-bar{
-    background-color: rgb(119, 114, 114);
     display: flex;
-    width: 100%;
     height: 70%;
 }
 
@@ -39,15 +35,87 @@
 }
 
 .nav-bar .navlist{
-    background-color: rebeccapurple;
+    position: relative;
     display: flex;
     list-style: none;
     flex-wrap: wrap;
 }
 
 .nav-bar .navlist li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    list-style: none;
+    cursor: pointer;
+    width: 200px;
+    box-shadow: 0 16px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+
+.nav-bar .navlist li:hover{
+    box-shadow: 0 16px 25px rgba(0, 0, 0, 0);
+}
+
+.nav-bar .navlist li::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 60px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.nav-bar .navlist li:hover::before{
+    opacity: 1;
+}
+
+.nav-bar .navlist li::after{
+    content: '';
+    position: absolute;
     width: 100%;
-    text-align: center;
-    align-content: center;
-    border: 1px solid black;
+    height: 100%;
+    border-radius: 60px;
+    background: linear-gradient(45deg, red, orange);
+    transition: 0.5s;
+    filter: blur(15px);
+    z-index: -1;
+    opacity: 0;
+}
+
+.nav-bar .navlist li:hover::after{
+    opacity: 0.5;
+}
+
+.nav-bar .navlist li .title{
+    color: black;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transform: scale(0);
+    transition: 0.25s;
+    transition-delay: 0s;
+}
+
+.nav-bar .navlist li:hover .title{
+    transform: scale(1);
+    transition-delay: 0.25s;
+}
+
+ul li svg{
+    font-size: 1.75em;
+    transition: 0.25s;
+    transition-delay: 0.25s;
+}
+
+ul li:hover svg{
+    transform: scale(0);
+    color: #fff;
+    transition-delay: 0s;
+}
+
+ul li span{
+    position: absolute;
 }
