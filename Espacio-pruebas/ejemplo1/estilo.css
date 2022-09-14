@@ -1,0 +1,59 @@
+/* Estilos de prueba */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #06181f;
+}
+
+.conteiner{
+    position: relative;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteiner .icon{
+    width: 200px;
+}
+
+.conteiner .icon path{
+    fill: transparent;
+    stroke-width: 10;
+    stroke: #31e8ff;
+}
+
+.conteiner .icon.heart path{
+    stroke-dasharray: 2600;
+    stroke-dashoffset: 2600;
+}
+
+.conteiner .icon.heart:hover path{
+    animation: animate-heart 1s linear forwards;
+}
+
+@keyframes animate-heart {
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 2600;
+    }
+    80%{
+        stroke-dashoffset: 5200;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 5200;
+        fill: #31e8ff;
+    }
+}

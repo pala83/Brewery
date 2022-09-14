@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.head-nav{
+    display: flex;
+    width: 200px;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.head-nav .nav-logo{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    background-color: aqua;
+}
+
+.head-nav .nav-logo a{
+    display: flex;
+    width: 100%;
+    background: url(assets/logo.png) no-repeat center center;
+    background-size: cover;
+}
+
+.head-nav .nav-bar{
+    background-color: rgb(119, 114, 114);
+    display: flex;
+    width: 100%;
+    height: 70%;
+}
+
+.head-nav .nav-footer{
+    height: 10%;
+    width: 100%;
+}
+
+.nav-bar .navlist{
+    background-color: rebeccapurple;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav-bar .navlist li{
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    border: 1px solid black;
+}
