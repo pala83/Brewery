@@ -7,7 +7,7 @@
 
 .head-nav{
     display: flex;
-    width: 200px;
+    width: 150px;
     height: 100vh;
     flex-wrap: wrap;
 }
@@ -29,11 +29,6 @@
     height: 70%;
 }
 
-.head-nav .nav-footer{
-    height: 10%;
-    width: 100%;
-}
-
 .nav-bar .navlist{
     position: relative;
     display: flex;
@@ -49,7 +44,7 @@
     
     list-style: none;
     cursor: pointer;
-    width: 200px;
+    width: 150px;
     box-shadow: 0 16px 25px rgba(0, 0, 0, 0.1);
     transition: 0.5s;
 }
@@ -103,6 +98,51 @@
     transform: scale(1);
     transition-delay: 0.25s;
 }
+
+/*===============footer==================*/
+
+.head-nav .nav-footer{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: grey;
+    align-items: center;
+}
+
+.head-nav .nav-footer .link{
+    color: black;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.head-nav .nav-footer .link[href*="facebook"]:hover{
+    transition: background 0.5s, color 0.5s;
+    color: blue;
+    border-radius: 100%;
+    background: white;
+}
+.head-nav .nav-footer .link[href*="instagram"]:hover{
+    transition: background 0.5s, color 0.5s;
+    color: white;
+    border-radius: 20px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.head-nav .nav-footer .link[href*="whatsapp"]:hover{
+    transition: background 0.5s, color 0.5s;
+    color: white;
+    border-radius: 30px;
+    background: green;
+}
+
+.head-nav .nav-footer i{
+    font-size: 30px;
+}
+
+/*===============fin-footer==================*/
 
 ul li svg{
     font-size: 1.75em;
