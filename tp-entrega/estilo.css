@@ -91,7 +91,7 @@
 }
 
 .nav-bar .navlist li .title{
-    color: black;
+    color: #2d220f;
     font-size: 1.1em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -116,7 +116,7 @@
 }
 
 .head-nav .nav-footer .link{
-    color: black;
+    color: #2d220f;
     width: 25px;
     height: 25px;
     display: flex;
