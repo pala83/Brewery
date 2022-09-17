@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     const btnVerif = document.querySelector("#btn-verif");
     const popup = document.querySelector(".popup");
     const altoAhi = document.querySelector(".verificador img");
-    darAcceso();
+    //darAcceso();
     btnVerif.addEventListener("click",(e)=>{
         if(retornarEdad(e.target.previousElementSibling.value) < 18)
             window.open("https://www.danonino.com.ar/");
@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             document.querySelector(".head-nav").classList.remove("blur");
         }
     });
+    /*
     function darAcceso(){
         popup.classList.add("desaparecer");
         altoAhi.classList.add("desaparecer-translate");
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         document.querySelector(".container").classList.remove("blur");
         document.querySelector(".head-nav").classList.remove("blur");
     }
+    */
 });
 
 function retornarEdad(fecha){
