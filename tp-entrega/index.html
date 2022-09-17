@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    
     <script src="https://kit.fontawesome.com/ea9535a4b8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilo.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="head-nav">
+    <header class="head-nav blur">
         <div class="nav-logo">
             <a href="#"></a>
         </div>
@@ -58,7 +61,19 @@
             <a class="link" href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
     </header>
-    <section>
+    <div class="verificador">
+        <img src="assets/alto-ahi.png" alt="alto ahi meme">
+        <div class="popup">
+            <h2>Compra para distribucion y consumo de bebidas alcoholicas</h2>
+            <p>Ingrese su <strong>fecha de nacimiento</strong> para poder continuar</p>
+            <div class="fecha">
+                <input type="date" id="valor-fecha" required>
+                <button id="btn-verif">enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="container blur">
         <h1>hello world</h1>
         <h1>hello world</h1>
         <h1>hello world</h1>
@@ -107,8 +122,8 @@
         <h1>hello world</h1>
         <h1>hello world</h1>
         <h1>hello world</h1>
-        
     </section>
+
     <script src="js/script.js"></script>
 </body>
 </html>

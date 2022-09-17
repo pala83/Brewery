@@ -144,10 +144,107 @@ body{
     position: absolute;
 }
 
-section{
-    padding: 0px 180px;
+section.container{
+    z-index: -1;
+    padding-left:180px;
+}
+/*========efectos========*/
+.blur{
+    pointer-events: none;
+    filter: blur(5px);
 }
 
+.desaparecer{
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.desaparecer-translate{
+    transform: translate(-500px);
+    transition: 1s;
+}
+
+/*========fin-efectos========*/
+.verificador{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verificador .popup{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #441901;
+    width: 500px;
+    padding: 30px;
+    color: #F2CCB6;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    align-content: space-between;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.verificador .popup .fecha{
+    z-index: 1;
+}
+
+.verificador .popup .fecha input[type="date"], .verificador .popup .fecha button{
+    background-color: #F2CCB6;
+    color: #441901;
+    padding: 10px;
+    font-family: "Roboto mono", monospace;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.verificador .popup .fecha button{
+    text-transform: uppercase;
+    border: 1px solid #F2CCB6;
+}
+
+.verificador .popup .fecha button:hover{
+    background-color: #441901;
+    color: #F2CCB6;
+    transition: .5s;
+}
+
+.verificador img{
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+}
+
+/*==================scrollbar=========================*/
+/* width */
+::-webkit-scrollbar {
+    background-color: #F2CCB6;
+    width: 15px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #732C02;
+    border-radius: 10px;
+}
+/*==============fin-scrollbar=========================*/
+
 @media only screen and (max-width: 768px){
+
+}
+
+@media only screen and (max-width: 414px){
 
 }
