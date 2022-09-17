@@ -96,7 +96,7 @@ body{
 }
 
 .head-nav .nav-footer .link{
-    color: #000;
+    color: #0d0d0d;
     width: 25px;
     height: 25px;
     display: flex;
@@ -146,25 +146,15 @@ body{
 
 section.container{
     z-index: -1;
-    padding-left:180px;
-}
-/*========efectos========*/
-.blur{
-    pointer-events: none;
-    filter: blur(5px);
+    padding-left: 150px;
+    width: 100vw;
 }
 
-.desaparecer{
-    transform: scale(0);
-    transition: 0.5s;
+section.container img{
+    object-fit: cover;
+    object-position: center;
 }
 
-.desaparecer-translate{
-    transform: translate(-500px);
-    transition: 1s;
-}
-
-/*========fin-efectos========*/
 .verificador{
     position: fixed;
     height: 100vh;
@@ -240,6 +230,23 @@ section.container{
     border-radius: 10px;
 }
 /*==============fin-scrollbar=========================*/
+
+/*========efectos========*/
+.blur{
+    pointer-events: none;
+    filter: blur(5px);
+}
+
+.desaparecer{
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.desaparecer-translate{
+    transform: translate(-500px);
+    transition: 1s;
+}
+/*========fin-efectos========*/
 
 @media only screen and (max-width: 768px){
 
