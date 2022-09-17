@@ -5,12 +5,17 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    display: flex;
+}
+
 .head-nav{
+    position: fixed;
     display: flex;
     width: 150px;
     height: 100vh;
     flex-wrap: wrap;
-    background-color: #c7c0b3;
+    background-color: #F2CCB6;
 }
 /*======logo=======*/
 .head-nav .nav-logo{
@@ -23,7 +28,7 @@
 .head-nav .nav-logo a{
     width: 100%;
     background: url(assets/logo.svg) round;
-    margin: 10px 0px;
+    margin: 10px;
 }
 /*====fin-logo======*/
 .head-nav .nav-bar{
@@ -51,8 +56,8 @@
 }
 
 .nav-bar .navlist li:hover{
-    background: #2D220F;
-    color: #c7c0b3;
+    background: #441901;
+    color: #F2CCB6;
 }
 
 .nav-bar .navlist li:hover .title{
@@ -69,7 +74,7 @@
 }
 
 .nav-bar .navlist li .title{
-    color: #2d220f;
+    color: #441901;
     font-size: 1.1em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -86,7 +91,7 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    background-color: #76592694;
+    background: linear-gradient(#F2CCB6 60%, #441901 110%);
     align-items: center;
 }
 
@@ -137,4 +142,12 @@
 
 .nav-bar .navlist span{
     position: absolute;
+}
+
+section{
+    padding: 0px 180px;
+}
+
+@media only screen and (max-width: 768px){
+
 }
