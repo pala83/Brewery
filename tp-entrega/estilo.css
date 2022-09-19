@@ -148,6 +148,9 @@ section.container{
     z-index: -1;
     padding-left: 150px;
     width: 100vw;
+    height: 100vh;
+    background: url(assets/pared-birra.png) content-box;
+    background-size: auto 100%;
 }
 
 section.container img{
@@ -248,8 +251,62 @@ section.container img{
 }
 /*========fin-efectos========*/
 
+
+
+/*==========estilos carousel==============*/
+
+.pr_block-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.pr_logos-container{
+    width: 100%;
+}
+
+.pr_block-wrapper {
+    display: flex;
+    width: 300%;
+    animation: bannerscroll 50s linear infinite;
+}
+
+.pr_logos-wrapper {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+.pr_logos-wrapper li {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  margin: 10px;
+}
+
+.pr_logos-wrapper li img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+}
+/*==========fin_estilos carousel==============*/  
+
+
+@keyframes bannerscroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 @media only screen and (max-width: 768px){
 
+    .pr_logos-wrapper li {
+        width: 50px;
+        height: 50px;
+        margin: 5px 3px;
+    }
 }
 
 @media only screen and (max-width: 414px){
