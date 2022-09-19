@@ -1,0 +1,45 @@
+
+.pr_logos-wrapper img {
+    display: block;
+    width: 100%;
+  }
+  
+  .pr_block-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .pr_block-wrapper {
+    display: flex;
+    width: 300%;
+    animation: bannerscroll 40s linear infinite;
+  }
+  @media only screen and (max-width:900px) {
+    .pr_block-wrapper {
+      width:900%
+    }
+  }
+  
+  .pr_logos-container {
+    width: 100%;
+  }
+  
+  .pr_logos-wrapper {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .pr_logos-wrapper li {
+    width: 100%;
+  }
+  
+  @keyframes bannerscroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }

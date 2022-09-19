@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded",()=>{
     const altoAhi = document.querySelector(".verificador img");
     //darAcceso();
     btnVerif.addEventListener("click",(e)=>{
-        if(retornarEdad(e.target.previousElementSibling.value) < 18)
+        let fecha = e.target.previousElementSibling.value;
+        console.log(retornarEdad(fecha));
+        if(retornarEdad(fecha) < 18 && (retornarEdad(fecha)!==""))
             window.open("https://www.danonino.com.ar/");
         else{
             popup.classList.add("desaparecer");
