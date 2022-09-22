@@ -37,7 +37,8 @@ document.addEventListener("DOMContentLoaded",()=>{
 });
 
 function odometer(elem){
-    let inicio = 1000;
+    let inicio = Math.floor(Math.random()*10000)+1000;
+    elem.innerHTML = inicio;
     setInterval(() => {
         inicio = inicio + Math.floor(Math.random()*1000)+50;
         elem.innerHTML = inicio;

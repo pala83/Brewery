@@ -186,6 +186,23 @@ main.container .fondo{
 .container .contenido .card{
     background-color: #D9670480;
     border-radius: 25px;
+    box-shadow: 0px 0px 5px 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.card .title{
+    font-family: "Acme", sans-serif;
+    font-size: 1.7rem;
+}
+
+.card .odometer{
+    font-size: 3rem;
+    font-family: "Roboto mono", monospace;
 }
 
 .verificador{
