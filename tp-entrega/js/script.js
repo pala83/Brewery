@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded",()=>{
     const btnVerif = document.querySelector("#btn-verif");
     const popup = document.querySelector(".popup");
     const altoAhi = document.querySelector(".verificador img");
+    const contador = document.querySelector("#odometer");
+    odometer(contador);
+
     //darAcceso();
     btnVerif.addEventListener("click",(e)=>{
         let fecha = e.target.previousElementSibling.value;
@@ -32,6 +35,14 @@ document.addEventListener("DOMContentLoaded",()=>{
     }
     */
 });
+
+function odometer(elem){
+    let inicio = 1000;
+    setInterval(() => {
+        inicio = inicio + Math.floor(Math.random()*1000)+50;
+        elem.innerHTML = inicio;
+    }, 5000);
+}
 
 function retornarEdad(fecha){
     let hoy = new Date();

@@ -10,8 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        
     <script src="https://kit.fontawesome.com/ea9535a4b8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/odometer@0.4.8/themes/odometer-theme-default.css">
+    
     <link rel="stylesheet" href="estilo.css">
     <title>Brewery</title>
 </head>
@@ -74,8 +77,8 @@
         </div>
     </div>
 
-    <section class="container blur">
-        <div class="pr_block-container">
+    <main class="container blur">
+        <section class="pr_block-container">
             <article class="pr_block-wrapper">
                 <div class="pr_logos-container">
                     <ul class="pr_logos-wrapper">
@@ -118,9 +121,26 @@
                     </ul>
                 </div>
             </article>
+        </section>
+        <div class="fondo">
+            <article class="contenido">
+                <h1 class="titulo-vistoso" style="color: white;">cerbeceria brewery 
+                    <p>Cerbeza artesanal y de calidad desde 1702</p>
+                </h1>
+                <div class="card">
+                    algo
+                </div>
+                <div class="card">
+                    <div class="counter">
+                        <p>PewDiePie</p>
+                        <div class="odometer" id="odometer">0</div>
+                        <h3 class="title">Youtube Subscribers <br> Realtime Counter</h3>
+                    </div>
+                    <script src="https://cdn.jsdelivr.net/npm/odometer@0.4.8/odometer.min.js"></script>
+                </div>
+            </article>
         </div>
-    </section>
-
+    </main>
     <script src="js/script.js"></script>
 </body>
 </html>

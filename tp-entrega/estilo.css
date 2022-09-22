@@ -7,6 +7,7 @@
 
 body{
     display: flex;
+    font-size: 16px;
 }
 
 .head-nav{
@@ -144,18 +145,47 @@ body{
     position: absolute;
 }
 
-section.container{
+main.container{
     z-index: -1;
     padding-left: 150px;
     width: 100vw;
+    height: 100vh;
+}
+
+main.container .fondo{
+    width: 100%;
     height: 100vh;
     background: url(assets/pared-birra.png) content-box;
     background-size: auto 100%;
 }
 
-section.container img{
-    object-fit: cover;
-    object-position: center;
+.container .contenido .titulo-vistoso{
+    font-family: 'Acme', sans-serif;
+    text-transform: uppercase;
+    grid-area: titulo;
+    font-size: 3.5rem;
+}
+
+.container .contenido .titulo-vistoso p{
+    font-family: 'Acme', sans-serif;
+    text-transform: initial;
+    font-size: .3em;
+}
+
+.container .contenido{
+    padding: 180px 50px 0px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "titulo titulo"
+                         "auto auto";
+    grid-column-gap: 50px;
+    grid-row-gap: 60px;
+}
+
+.container .contenido .card{
+    background-color: #D9670480;
+    border-radius: 25px;
 }
 
 .verificador{
@@ -256,6 +286,8 @@ section.container img{
 /*==========estilos carousel==============*/
 
 .pr_block-container {
+    position: absolute;
+    left: 0px;
     width: 100%;
     overflow: hidden;
 }
