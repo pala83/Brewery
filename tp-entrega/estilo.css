@@ -339,7 +339,6 @@ main.container .fondo{
 }
 /*==========fin_estilos carousel==============*/  
 
-
 @keyframes bannerscroll {
     0% {
         transform: translateX(0);
