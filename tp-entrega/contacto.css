@@ -1,0 +1,58 @@
+.logo{
+    position: relative;
+     width: auto;
+     height: 10px;
+     background-color: #e79e70;
+     margin: 10px;
+ }
+ 
+ 
+ .header{
+     width: 100%;
+     height: 10px;
+     background-color: #5b179b;
+     display: inline;
+     justify-content: left;
+     align-items: center;
+ }
+ 
+ .head-nav{
+     position: auto;
+     display: flex;
+     width: 150px;
+     height: 100vh;
+     flex-wrap: wrap;
+     background-color: #F2CCB6;
+ }
+ 
+ .footer{
+     margin-top: 5rem;
+     margin-bottom: -1rem;
+     display: flex;
+     flex-direction: row-reverse;
+     width: auto;
+     justify-content: center;
+     height: 40px;
+     background-color: #F2CCB6;
+ }
+ 
+ 
+ .contacto {
+     
+     background-color: #d16405cc;
+     padding: 10px;
+     margin: 130px;
+     justify-content: center;
+     align-items: center;
+     border-radius: 20px;
+     
+ }
+ 
+ .formulario{
+     background-color: #d16405cc;
+     padding: 15px;
+     margin: 130px;
+     justify-content: center;
+     align-items: center;
+     border-radius: 20px;
+ }
