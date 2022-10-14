@@ -26,33 +26,38 @@
  }
  
  .footer{
-     margin-top: 5rem;
-     margin-bottom: -1rem;
-     display: flex;
-     flex-direction: row-reverse;
-     width: auto;
+    
+     display: flex;  
+     width: 100%;
      justify-content: center;
-     height: 40px;
+     height: 35px;
      background-color: #F2CCB6;
  }
  
  
- .contacto {
+ .content {
      
      background-color: #d16405cc;
-     padding: 10px;
-     margin: 130px;
+     padding: 20px 20px 5px 20px;
+     display:auto;
+     margin: 200px;
      justify-content: center;
      align-items: center;
-     border-radius: 20px;
+     text-align: center;
+     border-radius: 10px;
+     width: 100%;
      
  }
  
  .formulario{
      background-color: #d16405cc;
-     padding: 15px;
-     margin: 130px;
+     display:auto;
+     padding: 20px 20px 5px 20px;
+     margin: 180px;
      justify-content: center;
      align-items: center;
-     border-radius: 20px;
+     text-align: center;
+     border-radius: 10px;
+     width: 100%;
+     
  }

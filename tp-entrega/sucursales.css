@@ -1,0 +1,23 @@
+.footer{
+    
+    display: flex;  
+    width: 100%;
+    justify-content: center;
+    height: 35px;
+    background-color: #F2CCB6;
+}
+
+
+.content {
+     
+    background-color: #d16405cc;
+    padding: 20px 20px 5px 20px;
+    display: auto;
+    margin: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    
+}
