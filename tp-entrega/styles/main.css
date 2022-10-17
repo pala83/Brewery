@@ -28,7 +28,7 @@ body{
 
 .head-nav .nav-logo a{
     width: 100%;
-    background: url(assets/logo.svg) round;
+    background: url(../assets/logo.svg) round;
     margin: 10px;
 }
 /*====fin-logo======*/
@@ -155,24 +155,24 @@ main.container{
 main.container .fondo{
     width: 100%;
     height: 100vh;
-    background: url(assets/pared-birra.png) content-box;
+    background: url(../assets/pared-birra.png) content-box;
     background-size: auto 100%;
 }
 
-.container .contenido .titulo-vistoso{
+main.container .contenido .titulo-vistoso{
     font-family: 'Acme', sans-serif;
     text-transform: uppercase;
     grid-area: titulo;
     font-size: 3.5rem;
 }
 
-.container .contenido .titulo-vistoso p{
+main.container .contenido .titulo-vistoso p{
     font-family: 'Acme', sans-serif;
     text-transform: initial;
     font-size: .3em;
 }
 
-.container .contenido{
+main.container .contenido{
     padding: 180px 50px 0px 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -183,7 +183,7 @@ main.container .fondo{
     grid-row-gap: 60px;
 }
 
-.container .contenido .card{
+main.container .contenido .card{
     background-color: #D9670480;
     border-radius: 25px;
     box-shadow: 0px 0px 5px 1px black;

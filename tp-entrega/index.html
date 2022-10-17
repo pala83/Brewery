@@ -15,26 +15,26 @@
     <script src="https://kit.fontawesome.com/ea9535a4b8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/odometer@0.4.8/themes/odometer-theme-default.css">
     
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="styles/main.css">
     <title>Brewery</title>
 </head>
 <body>
     <header class="head-nav blur">
         <div class="nav-logo">
-            <a href="#"></a>
+            <a href="index.html"></a>
         </div>
         <nav class="nav-bar">
             <ul class="navlist">
                 <li>
-                    <a href="#">
+                    <a href="cervezas.html">
                         <span class="icon">
                             <object class="svgClass" type="image/svg+xml" data="assets/beer.svg"></object>
                         </span>
-                        <span class="title">Cerbezas</span>
+                        <span class="title">Cervezas</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="sucursales.html">
                         <span class="icon">
                             <object class="svgClass" type="image/svg+xml" data="assets/map.svg"></object>                          
                         </span>
@@ -50,7 +50,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="contacto.html">
                         <span class="icon">
                             <object class="svgClass" type="image/svg+xml" data="assets/contacto.svg"></object>  
                         </span>
@@ -70,10 +70,10 @@
         <div class="popup">
             <h2>Compra para distribucion y consumo de bebidas alcoholicas</h2>
             <p>Ingrese su <strong>fecha de nacimiento</strong> para poder continuar</p>
-            <div class="fecha">
-                <input type="date" id="valor-fecha" required>
-                <button id="btn-verif">enviar</button>
-            </div>
+            <form class="fecha" id="formEdad">
+                <input type="date" name="fecha" required>
+                <button type="submit" id="btn-verif">enviar</button>
+            </form>
         </div>
     </div>
 
@@ -124,17 +124,17 @@
         </section>
         <div class="fondo">
             <article class="contenido">
-                <h1 class="titulo-vistoso" style="color: white;">cerbeceria brewery 
-                    <p>Cerbeza artesanal y de calidad desde 1702</p>
+                <h1 class="titulo-vistoso" style="color: white;">cerveceria brewery 
+                    <p>Cerveza artesanal y de calidad desde 1702</p>
                 </h1>
                 <div class="card">
                     <h3 class="title">MALTA, LÚPULO Y CEREALES CERVECEROS. LOS MEJORES INGREDIENTES PARA LOGRAR UNA BIRRA FÁCIL DE TOMAR POR Y PARA TODXS.</h3>
                 </div>
                 <div class="card">
                     <div class="counter">
-                        <h3 class="title">Litros de cerbeza despachados</h3>
+                        <h3 class="title">Litros de cerveza despachados</h3>
                         <div class="odometer" id="odometer">0000</div>
-                        <p>Cada 500.000 litros de cerbeza despachados Brewery hace un descuento general de sus productos</p>
+                        <p>Cada 500.000 litros de cerveza despachados Brewery hace un descuento general de sus productos</p>
                     </div>
                     <script src="https://cdn.jsdelivr.net/npm/odometer@0.4.8/odometer.min.js"></script>
                 </div>
@@ -142,5 +142,6 @@
         </div>
     </main>
     <script src="js/script.js"></script>
+    <script src="js/verificador.js"></script>
 </body>
 </html>

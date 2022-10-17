@@ -15,18 +15,18 @@
         
     <script src="https://kit.fontawesome.com/ea9535a4b8.js" crossorigin="anonymous"></script>
         
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="styles/main.css">
     
-    <link rel="stylesheet" href="nos.css">
+    <link rel="stylesheet" href="styles/nos.css">
 
-    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="styles/contacto.css">
 
 
     
     <title>contacto</title>
 </head>
 <body class="fondo_us">
-    <header class="head-nav">
+    <header class="head-nav blur">
         <div class="nav-logo">
             <a href="index.html"></a>
         </div>
@@ -72,6 +72,17 @@
             <a class="link" href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
     </header>
+    <div class="verificador">
+        <img src="assets/alto-ahi.png" alt="alto ahi meme">
+        <div class="popup">
+            <h2>Compra para distribucion y consumo de bebidas alcoholicas</h2>
+            <p>Ingrese su <strong>fecha de nacimiento</strong> para poder continuar</p>
+            <form class="fecha" id="formEdad">
+                <input type="date" name="fecha" required>
+                <button type="submit" id="btn-verif">enviar</button>
+            </form>
+        </div>
+    </div>
     <div>
         
         
@@ -113,6 +124,7 @@
         </div>
     </div>    
     
+    <script src="js/verificador.js"></script>
         
 </body>
 </html>
