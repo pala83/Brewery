@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     if(localStorage.getItem("esMayor")==="si"){
         document.querySelector("div.verificador").remove();
         document.querySelector(".head-nav").classList.remove("blur");
-        document.querySelector(".container").classList.remove("blur");
+        document.querySelector("#main").classList.remove("blur");
     }
     formEdad.addEventListener("submit",(e)=>{
         e.preventDefault();
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             setTimeout(()=>{
                 document.querySelector(".verificador").remove();
             }, 1000);
-            document.querySelector(".container").classList.remove("blur");
+            document.querySelector("#main").classList.remove("blur");
             document.querySelector(".head-nav").classList.remove("blur");
         }
     });

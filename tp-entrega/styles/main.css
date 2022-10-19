@@ -11,6 +11,7 @@ body{
 }
 
 .head-nav{
+    z-index: 50;
     position: fixed;
     display: flex;
     width: 150px;
@@ -206,6 +207,7 @@ main.container .contenido .card{
 }
 
 .verificador{
+    z-index: 100;
     position: fixed;
     height: 100vh;
     width: 100%;
@@ -281,6 +283,115 @@ main.container .contenido .card{
 }
 /*==============fin-scrollbar=========================*/
 
+.container-beer{
+    background: url(../assets/textura_bg.jpg);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    padding-left: 150px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.container-beer .card-beer{
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 50px;
+    height: 80vh;
+    width: 100%;
+}
+
+.card-beer .imagen{
+    display: flex;
+    padding: 20px 50px 0px 50px;
+    height: 100%;
+}
+
+.container-beer .descripcion{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 80px 80px 30px 80px;
+}
+
+.container-beer .descripcion h3{
+    font-size: 2.5rem;
+}
+
+.container-beer .descripcion ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.container-beer .descripcion ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav.nav-beer{
+    width: 100%;
+    text-align: center;
+}
+
+nav.nav-beer h1{
+    font-size: 4rem;
+    color: #732C02;
+    padding: 150px 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav.nav-beer .nav-list{
+    width: 100%;
+}
+
+nav.nav-beer .nav-list ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f2ccb665;
+}
+
+nav.nav-beer .nav-list ul li:hover{
+    background-color: #732C02;
+    transition: .5s;
+}
+nav.nav-beer .nav-list ul li:hover a{
+    color: #f2ccb6;
+}
+
+nav.nav-beer .nav-list ul li{
+    align-content: center;
+    width: 100%;
+    padding: 15px;
+}
+
+nav.nav-beer .nav-list ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #732C02;
+}
+
+.delimitador{
+    width: 100%;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 40px;
+    margin: 20px 0px;
+    text-align: center;
+    background: url(../assets/malta.png);
+    background-size: 7%;
+}
+
 /*========efectos========*/
 .blur{
     pointer-events: none;
@@ -298,10 +409,7 @@ main.container .contenido .card{
 }
 /*========fin-efectos========*/
 
-
-
 /*==========estilos carousel==============*/
-
 .pr_block-container {
     position: absolute;
     left: 0px;
