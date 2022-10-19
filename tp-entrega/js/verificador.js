@@ -1,7 +1,5 @@
 "use strict";
 
-localStorage.setItem("esMayor", "si");
-
 document.addEventListener("DOMContentLoaded",()=>{
     const popup = document.querySelector(".popup");
     const altoAhi = document.querySelector(".verificador img");
