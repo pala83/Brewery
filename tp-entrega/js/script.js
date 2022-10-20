@@ -4,12 +4,12 @@ const sucursales = ["Brewery Playa Grande","Brewery Constitución", "Brewery San
 
 document.addEventListener("DOMContentLoaded",()=>{
     const url = window.location.pathname.split("/");
-    const path = url[url.length-1].slice(0,-5)
+    const path = url[url.length-1].slice(0,-5);
     switch(path){
         case"index":
             const contador = document.querySelector("#odometer");
             odometer(contador);
-        break;
+            break;
         case"sucursales":
             let pagina=1;
             const comentarios = document.querySelector("#idComentarios");
@@ -45,7 +45,16 @@ document.addEventListener("DOMContentLoaded",()=>{
                     comentarios.appendChild(comentario);
                 }
             });
-        break;
+            break;
+        case "contacto":
+            console.log("aca llega");
+            const formContacto = document.querySelector("#form-contacto");
+            formContacto.addEventListener("submit",(e)=>{
+                e.preventDefault();
+                let datos = getData(formContacto);
+                console.log(datos);
+            })
+            break;
         default:
             console.log("este error no deberia ocurrir");
     }
@@ -53,10 +62,26 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 });
 
+function getData(formulario){
+    let form = new FormData(formulario);
+    let respuesta = {
+        nombre : form.get("nombre"),
+        apellido : form.get("apellido"),
+        telefono : form.get("telefono"),
+        email : form.get("email"),
+        pais : form.get("pais"),
+        ciudad : form.get("ciudad"),
+        gusta : Boolean(form.get("gusta")),
+        consulta : form.get("consulta"),
+        resultado : form.get("captcha")
+    };
+    return respuesta;
+}
+
 function generarComentario(usuario){
     let card = document.createElement("div");
     let valoracion = '<i class="fi fi-br-beer"></i>';
-    for(let i=0; i<Math.floor(Math.random() * 2)+3; i++)
+    for(let i=0; i<Math.floor(Math.random() * 3)+2; i++)
         valoracion+='<i class="fi fi-br-beer"></i>';
     card.innerHTML = `<div class="card">
                         <span class="imagen" style="background: url('${usuario.avatar}') no-repeat center/cover;"></span>

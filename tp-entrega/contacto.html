@@ -17,13 +17,7 @@
         
     <link rel="stylesheet" href="styles/main.css">
     
-    <link rel="stylesheet" href="styles/nos.css">
-
-    <link rel="stylesheet" href="styles/contacto.css">
-
-
-    
-    <title>contacto</title>
+    <title>Contacto</title>
 </head>
 <body class="fondo_us">
     <header class="head-nav blur">
@@ -83,47 +77,56 @@
             </form>
         </div>
     </div>
-    <div>
-        
-        
-        
-        <div class="">
-            <div class="content" style='text-align:center' >
-                <h1> CONTACTO</h1>
-                <p>Si desea contactarse con nosotros, puede hacerlo a través de los siguientes medios:</p>
-                <p>Telefono: 123456789</p>
-                <p>Email:Brewery@hotmail.com</p>
-                <p>Direccion: Av. Siempre Viva 123</p>
+    <main id="main" class="container-beer">
+        <h1 class="titulo-primario">Contactanos</h1>
+        <form id="form-contacto" class="contact-form" action="">
+            <div class="form-group">
+                <label>Nombres <span>(*)</span></label>
+                <input name="nombre" type="text" required>
             </div>
-        </div>    
-        <div class="formulario">
-            <br>
-            <p style='text-align:center'><h3> Tambien puedes dejar tus datos en este formulario y nos comunicaremos contigo.</h3> 
-            
-            <form action="enviar" method="get">
-                <div class="">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
-                </div>
-                <div class="">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Ingrese su email">
-                </div>
-                <div class="">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje"></textarea>
-                </div>
-                <div class="">
-                    <input type="submit" value="Enviar">
-                </div>
-            </form>
-            
-        </div>
-        <div class="footer">
-            <p>© 2022 - Todos los derechos reservados</p>    
-        </div>
-    </div>    
-    
+            <div class="form-group">
+                <label>Apellido <span>(*)</span></label>
+                <input name="apellido" type="text" required>
+            </div>
+            <div class="form-group">
+                <label>Telefono</label>
+                <input name="telefono" type="text">
+            </div>
+            <div class="form-group">
+                <label>Email <span>(*)</span></label>
+                <input name="email" type="email" required>
+            </div>
+            <div class="form-group">
+                <label>Pais <span>(*)</span></label>
+                <input name="pais" type="text" required>
+            </div>
+            <div class="form-group">
+                <label>Ciudad <span>(*)</span></label>
+                <input name="ciudad" type="text" required>
+            </div>
+            <div class="form-row">
+                <label>¿Te gusta la cerveza?</label>
+                <span class="checkbox">si<input name="gusta" type="checkbox"></span>
+                <p id="error"></p>
+            </div>
+            <div class="form-row">
+                <label>Consulta <span>(*)</span></label>
+                <textarea name="consulta" id="" cols="30" rows="10" required></textarea>
+            </div>
+            <div class="form-row captcha">
+                <p>Resuelve lo siguiente <span>(*)</span></p>
+                <span id="suma-captcha">5+6</span>
+                <input name="captcha" type="text" required>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+        <footer>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam atque velit impedit, itaque laboriosam quis, culpa quasi veniam facere eos dolore totam nobis omnis ad facilis ducimus veritatis architecto excepturi.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto excepturi molestiae ratione ducimus eum nisi corporis! Ratione, placeat? Sit eum voluptate voluptatum perferendis debitis impedit non distinctio inventore ratione quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rem fugiat ipsum nostrum deserunt ut consequuntur? Sequi quo laboriosam quidem explicabo aperiam eveniet autem, eum, vel nemo dicta eaque velit.
+        </footer>
+    </main>
+
+    <script src="js/script.js"></script>
     <script src="js/verificador.js"></script>
         
 </body>
