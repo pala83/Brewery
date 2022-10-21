@@ -86,7 +86,8 @@ body{
 }
 
 .container-btn{
-    position: absolute;
+    position: fixed;
+    top: 10px;
     display: none;
 }
 
@@ -690,6 +691,7 @@ nav.nav-beer .nav-list ul li a{
     .head-nav{
         width: 100vw;
         height: 100vh;
+        position: fixed;
         background-color: #fffffff2;
     }
 
@@ -736,4 +738,23 @@ nav.nav-beer .nav-list ul li a{
         display: initial;
     }
     
+    .head-nav .nav-footer{
+        background: linear-gradient(#fff 60%, #441901 110%);
+    }
+
+    .titulo-primario{
+        font-size: 2rem;
+        padding: 80px 0px;
+    }
+
+    .contact-form{
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .captcha{
+        width: auto;
+    }
 }
