@@ -85,6 +85,22 @@ body{
     transition-delay: 0s;
 }
 
+.container-btn{
+    position: absolute;
+    display: none;
+}
+
+.container-btn button{
+    border: none;
+    background-color: transparent;
+    color: #44180170;
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    font-size: 2rem;
+
+}
+
 /*=========fin-navlist+animation============*/
 
 /*===============footer==================*/
@@ -598,8 +614,18 @@ nav.nav-beer .nav-list ul li a{
     transition: 0.5s;
 }
 
+.aparecer{
+    transform: scale(1);
+    transition: 0.5s;
+}
+
 .desaparecer-translate{
-    transform: translate(-500px);
+    transform: translate(-100%);
+    transition: 1s;
+}
+
+.aparecer-translate{
+    transform: translate(0);
     transition: 1s;
 }
 /*========fin-efectos========*/
@@ -673,15 +699,29 @@ nav.nav-beer .nav-list ul li a{
     }
 
     .head-nav .nav-logo a{
+        text-decoration: none;
         margin: 0px;
+        width: 100vw;
         background: url(../assets/logo.svg) no-repeat round;
+    }
+
+    .head-nav .navlist span.icon{
+        display: none;
+    }
+
+    .head-nav .navlist span.title{
+        font-weight: bold;
+        text-decoration: none;
+        transform: scale(1);
     }
 
     .head-nav .navlist li{
         box-shadow: none;
         width: 100%;
     }
-    
+    .head-nav .navlist li a{
+        text-decoration: none;
+    }
     .head-nav .navlist span{
         position: initial;
     }
@@ -689,6 +729,11 @@ nav.nav-beer .nav-list ul li a{
     .container-beer{
         width: auto;
         padding-left: 0px;
+    }
+
+    .container-btn{
+        z-index: 100;
+        display: initial;
     }
     
 }

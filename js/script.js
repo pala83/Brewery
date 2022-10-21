@@ -90,8 +90,21 @@ document.addEventListener("DOMContentLoaded",()=>{
         default:
             console.log("este error no deberia ocurrir");
     }
-
-
+    const btnCruz = document.querySelector("#cruz");
+    const btnDespliegue = document.querySelector("#desp");
+    const nav = document.querySelector("#nav");
+    btnCruz.addEventListener("click",()=>{
+        nav.classList.remove("aparecer-translate");
+        nav.classList.add("desaparecer-translate");
+        btnCruz.style.display = "none";
+        btnDespliegue.style.display = "initial";
+    });
+    btnDespliegue.addEventListener("click",()=>{
+        nav.classList.remove("desaparecer-translate");
+        nav.classList.add("aparecer-translate");
+        btnCruz.style.display = "initial";
+        btnDespliegue.style.display = "none";
+    })
 });
 
 async function enviarMail(form, data){
