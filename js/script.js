@@ -94,14 +94,12 @@ document.addEventListener("DOMContentLoaded",()=>{
     const btnDespliegue = document.querySelector("#desp");
     const nav = document.querySelector("#nav");
     btnCruz.addEventListener("click",()=>{
-        nav.classList.remove("aparecer-translate");
-        nav.classList.add("desaparecer-translate");
+        nav.style.transform = "translate(-100%)";
         btnCruz.style.display = "none";
         btnDespliegue.style.display = "initial";
     });
     btnDespliegue.addEventListener("click",()=>{
-        nav.classList.remove("desaparecer-translate");
-        nav.classList.add("aparecer-translate");
+        nav.style.transform = "translate(0)";
         btnCruz.style.display = "initial";
         btnDespliegue.style.display = "none";
     })
