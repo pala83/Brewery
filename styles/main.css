@@ -661,5 +661,34 @@ nav.nav-beer .nav-list ul li a{
 }
 
 @media only screen and (max-width: 414px){
+    .head-nav{
+        width: 100vw;
+        height: 100vh;
+        background-color: #fffffff2;
+    }
 
+    .head-nav .nav-logo{
+        margin: 10px 30%;
+        box-shadow: none;
+    }
+
+    .head-nav .nav-logo a{
+        margin: 0px;
+        background: url(../assets/logo.svg) no-repeat round;
+    }
+
+    .head-nav .navlist li{
+        box-shadow: none;
+        width: 100%;
+    }
+    
+    .head-nav .navlist span{
+        position: initial;
+    }
+    
+    .container-beer{
+        width: auto;
+        padding-left: 0px;
+    }
+    
 }
