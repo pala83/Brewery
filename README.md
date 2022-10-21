@@ -1,9 +1,9 @@
 # Brewery cerveceria
 
 ## Indice
-- [¿Que es Brewery?]()
-- [Tecnologias y tecnicas de diseño utilizadas]()
-- [Requisitos tecnicos]()
+- [¿Que es Brewery?](#¿que-es-brewery)
+- [Tecnologias y tecnicas de diseño utilizadas](#tecnologias-y-tecnicas-de-diseño-utilizadas)
+- [Requisitos tecnicos](#reqisitos-tecnicos)
 - [Requisitos de diseño]()
 
 # ¿Que es Brewery?
