@@ -1,12 +1,12 @@
 # Brewery cerveceria
 
 ## Indice
-- [¿Que es Brewery?](#¿que-es-brewery)
+- [¿Que es Brewery?](#que-es-brewery)
 - [Tecnologias y tecnicas de diseño utilizadas](#tecnologias-y-tecnicas-de-diseño-utilizadas)
 - [Requisitos tecnicos](#reqisitos-tecnicos)
 - [Requisitos de diseño]()
 
-# ¿Que es Brewery?
+# Que es Brewery?
 
 **Brewery no existe**, es el concepto de una cerveceria que tiene mas de 300 años en el negocio cervecero y ha decidido digitalizar su imagen, compartiendo sus productos y reseñas con el mundo de internet.
 
@@ -52,7 +52,7 @@ Teniamos la intencion de darle una estructura al codigo **JS** aplicando **progr
 - Poseer al menos 4 páginas HTML, siendo su tematica libre.
 > Las utilizadas fueron: index.html, sucursales.html, contacto.html, cervezas.html, nosotros.html
 - Utilizar etiquetas semánticas para estructurar el sitio.
-> Las clases utilizadas en los divs tambien siguen una estructura semantica, similar a la que utilizan algnos frameworks css como bootstrap
+> Las clases utilizadas en los divs tambien siguen una estructura semantica, similar a la que utilizan algunos frameworks css como bootstrap
 ~~~ html
 <header class="head-nav blur">
     <div class="nav-logo">...
@@ -107,15 +107,24 @@ Servicio de Email exerno: Se puede observar en el action del form, utilizamos la
 
 - Utilizar al menos un Iframe, íconos de FontAwesome o Flaticon; y fuentes locales o bien de Google Fonts.
 
-> Utilizamos todas estas cosas, el Iframe es el de Google Maps y esta en la seccion de sucursales.
+> Utilizamos todas estas cosas, el Iframe es el de Google Maps y esta en la seccion de sucursales.html.
 
 - Tener al menos una pagina totalmente responsive con 3 puntos de corte para 3 tamaños de dispositivos distintos.
+> La pagina responsive es la de contacto.html, para los puntos de corte: base, max-width: 414px y max-width: 768px
 
 - Incorporar al menos una animacion, transformacion o una transicion.
+> La animacion es el banner de cerbezas ubicado en index.html, esta animado en bucle infinito con un @keyframe, tambien dentro de la pagina incluimos una serie de microanimaciones de transformacion o transicion para mejorar su UX.
 
 - Poseer una estructura HTML maquetada con Flexbox y/o Grid.
 
+
 - Consumir una API Rest desde JavaScript.
+> Las apis utilizadas son:
+>> https://reqres.in/api/: Proporciona datos falsos de usuarios para generar comentarios dinamicamente.
+>>
+>> https://formspree.io/: Una api que envia los datos de un formulario a una Email proporcionado.
+>
+> Api considerada: https://theysaidso.com/api/ para rellenar los comentarios de los usuarios
 
 - El desarrollo web deberá subirse a un servidor on-line para poder ser navegada por el Docente.
-
+> El servidor online utilizado fue Github Pages https://pala83.github.io/Brewery/
