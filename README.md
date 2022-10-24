@@ -4,7 +4,6 @@
 - [¿Que es Brewery?](#que-es-brewery)
 - [Tecnologias y tecnicas de diseño utilizadas](#tecnologias-y-tecnicas-de-diseño-utilizadas)
 - [Requisitos tecnicos](#reqisitos-tecnicos)
-- [Requisitos de diseño]()
 
 # Que es Brewery?
 
